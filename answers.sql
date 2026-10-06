@@ -1,4 +1,4 @@
-SELECT Account.account_id, Account.customer_name
+SELECT DISTINCT Account.account_id, Account.customer_name
 FROM Account
 JOIN Holding
     ON Account.account_id = Holding.account_id
