@@ -1,3 +1,3 @@
-SELECT Stock.ticker, Stock.company_id
-FROM Stock
-WHERE Stock.exg_code = 'NYSE'
+SELECT Holding.ticker, Holding.account_id, Holding.qty
+FROM Holding
+WHERE Holding.qty > 50.0
