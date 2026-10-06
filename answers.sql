@@ -9,7 +9,7 @@ JOIN Company
     ON Stock.company_id = Company.company_id
 WHERE Company.sector = 'Technology'
 
-INTERSECT
+EXCEPT
 
 SELECT DISTINCT Account.account_id, Account.customer_name
 FROM Account
